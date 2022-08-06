@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <title>SignUp Form</title>
+</head>
+
+<body>
+
+    <h1>SignUp Form</h1>
+    <p>Please fill out this form with the required information</p>
+
+    <form action="https://formspree.io/">
+
+        <fieldset>
+            <label>Full
+                Name: <input type="text" name="full-name" id="" required aria-required="true"
+                    placeholder="Enter your full name"></label>
+            <label>Email: <input type="email" name="email" id="" required aria-required="true"
+                    placeholder="Enter your Email"></label>
+            <label>Password: <input type="password" name="password" id="" required aria-required="true"
+                    placeholder="Create a new password" minlength="8"></label>
+            <label>Phone Number: <input type="number" name="phone" id="" required aria-required="true"
+                    placeholder="Enter your phone number" min="8"></label>
+            <label>Date of Birth: <input type="date" name="birth-day" id=""
+                    placeholder="Enter your date of birth"></label>
+
+        </fieldset>
+
+        <fieldset>
+            <label for="MENA">What is your country? Choose one from the MENA region:
+                <select id="MENA" name="country">
+
+                    <option value="1">Algeria</option>
+                    <option value="2">Bahrain</option>
+                    <option value="3">Comoros Islands</option>
+                    <option value="4">Djibouti</option>
+                    <option value="5">Egypt</option>
+                    <option value="6">Iran</option>
+                    <option value="7">Iraq</option>
+                    <option value="8">Jordan</option>
+                    <option value="9">Kuwait</option>
+                    <option value="10">Lebanon</option>
+                    <option value="11">Libya</option>
+                    <option value="12">Mauritania</option>
+                    <option value="13">Morocco</option>
+                    <option value="14">Oman</option>
+                    <option value="15">Palestine</option>
+                    <option value="16">Qatar</option>
+                    <option value="17">Saudi Arabia</option>
+                    <option value="18">Somalia</option>
+                    <option value="19">Sudan</option>
+                    <option value="20">Syria</option>
+                    <option value="21">Tunisia</option>
+                    <option value="22">United Arab Emirates</option>
+                    <option value="23">Yemen</option>
+
+                </select>
+
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <label>Plan: </label>
+            <label><input type="radio" name="plan" /> Free</label>
+            <label><input type="radio" name="plan" /> Pro</label>
+            <label>
+                <input type="checkbox" name="terms" class="inline" required /> I agree to terms and conditions</a>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+
+    </form>
+</body>
+
+</html>
